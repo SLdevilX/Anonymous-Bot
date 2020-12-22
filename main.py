@@ -25,7 +25,7 @@ DEFAULT_START = ("Hi, I am ANONYMOUS SENDER BOT.\n\n"
                  "__Created for Educational Purpose\n__"
                  "__Only !!\n\n__"
                  "Please Support The Developer\n"
-                 "By Joining the Support Channel👇👇")
+                 "By Joining the Support group👇👇")
 
 
 if Credentials.START_MESSAGE is not None:
@@ -40,8 +40,8 @@ async def startmessage(event):
       ok = event.chat_id
       await client.send_message(event.chat_id,
                                 message=START_TEXT,
-                                buttons=[[Button.url("✤ Deploy Your Own Bot ✤","https://heroku.com/deploy?template=https://github.com/prothinkergang/anonymous-bot")],
-                                         [Button.url("✤ SUPPORT CHANNEL ✤","t.me/Prothinkergang")]])                                                                 
+                                buttons=[[Button.url("✤ join our group ✤","t.me/danuma01")],
+                                         [Button.url("✤ Contact creator ✤","t.me/Danuma_admin_bot")]])                                                                 
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
     else:
